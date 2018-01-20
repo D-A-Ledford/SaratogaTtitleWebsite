@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+		<!--This is the Header of my web page.  This shows the title and any and all meta tags
+		as well as the link to the external style sheet which configures fonts, colors and backgrounds 
+		for the web pages of the Saratoga Title website-->
+		<title>Saratoga Title & Escrow</title>
+		<meta charset="utf-8">
+		<!--The viewpoint meta tag is used for accessibility with small devices, media quires are also coded in css file-->
+		<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+		<!--The description tag is a basic description of what the page is and what it contains-->
+		<meta name="description" content="Index page- Home page of the Saratoga Title & Escrow site">
+		<!--This is the link to the css file that styles the fonts, colors and all style elements of the web site-->
+		<link rel="stylesheet" href="styles/saratoga.css"> 
+		<!--These links contain the script files and links to JQuery scripts/plugins-->
+		
+</head>
+
+<body>
+<!--The id wrapper keeps all of the content centred in the middle of the page-->
+<div id="wrapper">
+<!--The id header creates a border around the header image and helps keep the header and navigation aligned.-->
+
+	<div id="header">
+		<h1><img src="images/logo.png" alt="Saratoga Logo" width= "70%" height= "50%"></h1>
+	</div>
+	
+	<div id='cssmenu'>
+		<ul>
+			<li><a href="index.html"><span>Home</span></a></li>
+			<li><a href='escrow.html'><span>Who We Are</span></a></li>
+			<li><a href='services.html'><span>What We Do</span></a></li>
+			<li><a href="meetTeam.html"><span>Meet Our Team</span></a></li>
+			<li class='active'><a href='contact.html'><span>Contact/Location</span></a></li>
+			<li class='last'><a href='faqs.html'><span>FAQ's</span></a></li>
+		</ul>
+	</div>
+
+<div id ="container">
+
+
+     <div id="form">
+		<p></p><br><br>
+		<img src="images/gateway.jpg" alt="Gateway to Corn by: Gomer" width= "35%" height= "50%">
+		<!--This is a form it allows the user to send a message. The action attribute tells the from
+		where to send the information to the form-->
+	   <form method="post" action="http://webdevbasics.net/scripts/demo.php"
+		onsubmit ="return validateForm();">
+		
+			&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+			&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+			&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;  
+			<div id="H2">Contact Us</div>
+	
+			<!--Use div's to separate the labels-->	
+			<div>
+				<!--The label tells the user what information to put in the form, putting an asterick beside the label lets the user
+				know the information is required.-->
+				<label for="name">*Name:</label>
+				<input type="text" id="name" name="name"
+				required="required"/>
+			</div>
+	
+			<div>
+				<label for="mail">*E-mail:</label>
+				<!-- the input attribute creates a text box to allow the user to enter the information, putting required at the end lets 
+				the user know the information is required-->
+				<input type="email" id="mail" name="email"
+				required="required"/>
+			</div>
+	
+			<div>
+				<label for="phone">Phone:</label>
+				<!-- the input attribute creates a text box to allow the user to enter the information-->
+				<input type="phone" id="phone" name="phone"/>
+			</div>
+	
+			<div>
+				<label for="pick">*Subject:</label>
+				<!--The select tells the users to select the available options-->
+				<input type="text" id="subject" name="subject"
+				required="required"/>
+			</div>
+	
+			<div>
+				<label for="msg">*Message:</label>
+				<!--Creates a text area to allow the user to enter a message-->
+				<textarea id="msg" name="msg"
+				required="required"></textarea>
+			</div>
+				<br>
+			<div>	
+				<input type="submit" class="styled-button-1" value="Send"/>
+			</div>	
+		   <br>
+		</form><!--ends the form-->
+
+	</div> <!--End form div-->
+
+	<p></p>
+	<br>
+    <div class="map">
+    <p></p>	
+		&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+	&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.407238556341!2d-77.80453708521776!3d38.73141616431683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b67c4fe6c7da73%3A0x6c6cc9faa96715d3!2sSaratoga+Title+%26+Escrow+Inc!5e0!3m2!1sen!2sus!4v1447900817794" 
+		width="550" height="450"  frameborder="20" style="border:6px solid #01015a" allowfullscreen></iframe>
+	</div>
+	
+	<div class="location">
+		<h2><p>Location</p>
+		<p>Address: 550 Broadview Ave # 101<br>
+		   &nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;					 
+		   Warrenton, VA 20186</p>
+		<p>Phone:&nbsp; <a href="tel:(540)349-1600">(540)349-1600</a></h2></p>
+				
+		<h2><p>Buisness Hours</p>
+		<p>Monday through Friday</p>
+		<p> 9:00am-5:00pm</h2></p>
+	</div>
+	
+<p></p>
+<footer>
+	<!--This navigation does not use a drop down menu and is here for accessibility and so the user doesn't have to go back to the top of the page to view the 
+    next web page-->
+	<nav>
+		<a href="index.html">Home |</a>
+		<a href="escrow.html">Who We Are |</a>
+		<a href="services.html">What We Do |</a>
+		<a href="meetTeam.html">Meet Our Team |</a>
+		<a href="contact.html">Contact/Location |</a>
+		<a href='faqs.html'><span>FAQ's |</span></a>
+	</nav><br>
+	
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Copyright &copy; 2015 Saratoga Title & Escrow  
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Email:<a href="mailto:Closing@SaratogaTitle.com">Closing@SaratogaTitle.com</a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Pictures by: Gomer Pile &copy; 2015
+	<p>&nbsp;</p>
+	
+</footer>
+</div>
+</div>
+</body>	
+</html>	
